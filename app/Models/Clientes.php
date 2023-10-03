@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Clientes extends Model
 {
     protected $table = 'clientes';
-    protected $filltable = ['clientes', 'email', 'telefone', 'endereco'];
+    protected $filltable = ['nome', 'email', 'telefone', 'endereco'];
     
 }
