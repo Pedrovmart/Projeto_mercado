@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Clientes;
 
 use Illuminate\Http\Request;
-use App\Models\Clientes;
 
 class ClientesController extends Controller
 {
@@ -22,8 +22,7 @@ class ClientesController extends Controller
 
     public function store(Request $request)
     {
-        $cliente = new Clientes
-        ([
+        $cliente = new Clientes([
             'nome' =>  $request->input('nome'),
             'email' =>  $request->input('email'),
             'telefone' =>  $request->input('telefone'),
