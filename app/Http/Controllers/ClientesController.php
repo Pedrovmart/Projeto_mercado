@@ -50,12 +50,24 @@ class ClientesController extends Controller
     
     public function update(Request $request, string $id)
     {
-        //
+        
+        $cliente = Clientes::findOrFail($id);
+       
+        $cliente->nome = $request->input('nome');
+        $cliente->email = $request->input('email');
+        $cliente->telefone = $request->input('telefone');
+        $cliente->endereco = $request->input('endereco');
+        $cliente->save();
+        return redirect()->route('clientes.index');
     }
 
    
     public function destroy(string $id)
     {
-        //
+
+        $cliente = Clientes::findOrFail($id);;
+
+        $cliente->delete();
+        return redirect()->route('clientes.index');
     }
 }
