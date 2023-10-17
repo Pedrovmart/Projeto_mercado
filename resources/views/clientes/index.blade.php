@@ -1,12 +1,12 @@
 <x-app-layout>
-    <link rel="stylesheet" href="{{ asset('css/autores/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/clientes/index.css') }}">
     <div class="container">
        
         <br>
         <a href="{{ route('clientes.create') }}" class="btn btn-primary">Novo Cliente</a>
         <table class="table">
             <thead>
-                <tr>
+                <tr class="tr_title">
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Email</th>
