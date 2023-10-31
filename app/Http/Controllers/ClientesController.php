@@ -60,7 +60,19 @@ class ClientesController extends Controller
         $cliente->save();
         return redirect()->route('clientes.index');
     }
+/* 
+    public function store(Request $request)
+    {
+        $request->validate([
+            'nome' =>'required|string|max:50',
+            'email' => 'required',
+            'telefone' => 'required|integer',
+            'endereco' => 'required'
+        ]);
+        return
 
+    }
+*/
    
     public function destroy(string $id)
     {
