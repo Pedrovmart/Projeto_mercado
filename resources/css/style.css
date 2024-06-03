@@ -1,0 +1,139 @@
+:root {
+  --main-font: 'Poppins', sans-serif;
+  --main-color: #0c0c0c;
+  --background-color: #9c0000;
+  --accent-color: #1cbbb4;
+  --highlight-color: #ff4f5a;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  background-color: var(--background-color);
+}
+
+/* ... (other global styles) */
+
+/* Header Section */
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.header_section .nav_container {
+  margin: 0 auto;
+}
+
+.header_section .user_option,
+.header_section .user_option a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.header_section .user_option a img {
+  min-width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* ... (other header styles) */
+
+/* Slider Section */
+.slider_section,
+.experience_section,
+.freelance_section {
+  display: flex;
+  align-items: center;
+}
+
+.slider_section .detail-box .btn-box,
+.experience_section .detail-box .btn-box,
+.freelance_section .tab_container .t-link-box .detail-box .btn-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 45px -5px 0 -5px;
+}
+
+/* ... (other slider styles) */
+
+/* Category Section */
+.category_section {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  text-align: center;
+}
+
+.category_section .heading_container h2 {
+  border-bottom: 1px solid #ffffff;
+}
+
+.category_section .category_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* ... (other category styles) */
+
+/* Info Section */
+.info_section {
+  position: relative;
+  background-color: #1a2e35;
+  color: #ffffff;
+}
+
+.info_section .info_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 75px;
+}
+
+.info_section .info_form form input {
+  outline: none;
+  width: 100%;
+  padding: 7px 10px;
+}
+
+.info_section .info_form form button {
+  display: inline-block;
+  padding: 8px 40px;
+  background-color: var(--highlight-color);
+  color: #ffffff;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 0;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.info_section .info_form form button:hover {
+  background-color: transparent;
+  border-color: var(--highlight-color);
+  color: var(--highlight-color);
+}
+
+/* ... (other info styles) */
+
+/* Footer Section */
+.footer_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fdfeff;
+}
+
+.footer_section p {
+  color: #171717;
+  padding: 25px 0 20px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer_section a {
+  color: #171717;
+}
